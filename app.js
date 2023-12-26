@@ -104,9 +104,11 @@ app.get('/classifyResult', (reqClassifyResult, resClassifyResult) => {
       
       req.end();
     });
-
+    app.get('/', (req, res) => {
+        res.send('Hello, World!');
+      });
     //http://demo.veriket.com/Services.asmx/ClassifyData?_clientKey=41H7wO535fLV3hHwN6hqbg==&company=2d5d7ee8-57e0-467f-b479-d0ebfd5b5aa0&data=Test&mac=1&ip=2&ip2=3&user=fati
-const PORT = 3001;
-app.listen(PORT, () => {
+    const port = process.env.PORT || 3000;
+    app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
