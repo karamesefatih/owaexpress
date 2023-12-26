@@ -59,4 +59,4 @@ jobs:
           app-name: 'owaexpress'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6EE746E112004360ABA0967CA1111BD3 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A264C498E1B644C1A2A0A3C306E55E05 }}
